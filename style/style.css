@@ -1,0 +1,433 @@
+/* ! the Component */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  "Josefin Sans", sans-serif;
+}
+
+:root  {
+    --main-color: #e40982;
+    --text-color: #7c6e67;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .container { width: 750px;}
+}
+@media (min-width: 992px) {
+    .container { width: 970px;}
+}
+@media (min-width: 1200px) {
+    .container {width: 1170px;}
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* ! end Component */
+
+/* ! Start Header */
+.order-delivery {
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.order-delivery span {
+    font-size: 12px;
+}
+
+nav {
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a{
+    color: var(--main-color);
+    margin-left: 20px;
+    text-decoration: none;
+}
+/* ! End Header */
+
+/* ? Start home */
+
+.home {
+    margin:100px 220px;
+}
+.home h2 {
+    color: var(--main-color);
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 0.98;
+    font-weight: bold;
+}
+.home p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-top: 20px;
+}
+/* ? end Header */
+
+/* ? Start our-specialites */
+.our-specialites h3{
+    margin: 0px 0 20px;
+}
+.our-specialites h3,
+.our-specialites .cards h4 {
+    font-weight: 400;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+.our-specialites .container .cards{
+    display: flex;
+}
+
+.our-specialites .container .card:not(:last-child) {
+    margin-right: 20px;
+}
+.our-specialites img {
+    width: 100% 
+}
+
+
+/* ? end our-specialites */
+
+/* ! Start ABOUT US */
+
+.about-us {
+    margin:120px 0;
+    background-color: #fef3ed;
+}
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .container div {
+    width: 45%;
+    height: 350px;
+}
+.about-us .text {
+    padding: 70px 20px;
+}
+.about-us .text h2 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.about-us .text p {
+    line-height: 1.8;
+    color: #916e67;
+}
+
+.about-us .text a {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 30px -55px
+}
+.about-us .img img {
+    width: 100%;
+}
+
+/* ! end ABOUT US */
+
+
+/* ! Start CAKE-COLLECTION  */
+
+.CAKE-COLLECTION  {
+    margin:120px 0;
+}
+
+.CAKE-COLLECTION h3 {
+    margin: 0px 0 20px;
+}
+
+.CAKE-COLLECTION h3,
+.CAKE-COLLECTION .cards h4 {
+    font-weight: 400;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+.CAKE-COLLECTION .container .cards{
+    display: flex;
+}
+
+.CAKE-COLLECTION .container .card:not(:last-child) {
+    margin-right: 20px;
+}
+.CAKE-COLLECTION img {
+    width: 100% 
+}
+
+.CAKE-COLLECTION .container .cards{
+    align-items: center;
+}
+
+.CAKE-COLLECTION  .card p {
+    color: var(--text-color);
+    margin-top: 8px;
+}
+
+.CAKE-COLLECTION  .see-more  {
+    color: var(--main-color);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* ! end CAKE-COLLECTION  */
+
+
+/*  Start HAPPY CUSTOMERS  */
+
+.happy-customers {
+    margin:120px 0;
+    background-image: url("/assist/imgs/img33.png");
+    background-size: cover;
+    padding: 70px;
+}
+
+.happy-customers p.header{
+    margin: 10px 0 20px;
+    color: var(--main-color);
+}
+
+.happy-customers .cards h4 {
+}
+.happy-customers .container .cards{
+    display: flex;
+}
+
+.happy-customers .container .card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.happy-customers .cards .card {
+    width: calc((100% - 40px) / 3);
+    height: 344px;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 2%;
+    border: 2px solid var(--main-color);
+}
+
+.happy-customers .cards .card .star {
+    margin: 30px 0;
+}
+
+
+.happy-customers .cards .card .star span {
+    color: var(--main-color);
+}
+
+.happy-customers .cards .card p {
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
+.happy-customers .cards .card p.name {
+    margin-top: 30px;
+}
+/*  end HAPPY CUSTOMERS  */
+
+
+/* Start ON_THE_BLOG */
+
+.ON_THE_BLOG {
+    margin: 120px 0;
+}
+
+.ON_THE_BLOG .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ON_THE_BLOG .text {
+    width: calc((100% - 20px)/ 3);
+}
+
+.ON_THE_BLOG .text a {
+    display: inline-block;
+    color: var(--main-color);
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.ON_THE_BLOG h3 {
+    margin: 0px 0 20px;
+}
+
+.ON_THE_BLOG h3,
+.ON_THE_BLOG .cards h4 {
+    font-weight: 400;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+.ON_THE_BLOG .text p {
+    color: var(--text-color);
+    line-height: 1.3;
+}
+.ON_THE_BLOG .container .cards{
+    display: flex;
+    width: 700px;
+}
+
+.ON_THE_BLOG .container .card:not(:last-child) {
+    margin-right: 20px;
+}
+.ON_THE_BLOG img {
+    width: 100% 
+}
+
+.ON_THE_BLOG  .card p {
+    color: var(--text-color);
+    margin-top: 8px;
+}
+
+.ON_THE_BLOG  .see-more  {
+    color: var(--main-color);
+    margin-left: 20px;
+    text-decoration: none;
+}
+/* end ON_THE_BLOG */
+
+hr {
+    border-color: var(--main-color);
+    margin: 120px 0;
+
+}
+
+/* Start FOLLOW US ON INSTAGRAM */
+
+.FOLLOW_INSTAGRAM {
+    margin: 120px 0;
+}
+
+.FOLLOW_INSTAGRAM h3 {
+    font-weight: 400;
+    color: var(--main-color);
+    margin: 10px 0 20px;
+}
+
+.FOLLOW_INSTAGRAM .cards {
+    display: flex;
+}
+
+.FOLLOW_INSTAGRAM .cards img {
+    width: 100%;
+}
+
+.FOLLOW_INSTAGRAM .container .card:not(:last-child) {
+    margin-right: 4px;
+}
+
+
+/* end FOLLOW US ON INSTAGRAM */
+/* start footer */
+
+.footer {
+    background-color: #fef3ed;
+    color: var(--text-color);
+    padding: 120px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .text {
+    width: 650px;
+}
+
+.footer .text h3 {
+    margin-bottom: 20px;    
+    font-weight: 400;
+}
+
+.footer .text p {
+    line-height: 1.5;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.footer .links a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.footer .links li {
+    padding: 5px 0;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.full-img {
+    background-image: url(/assist/imgs/footer.jpg);
+    background-size: cover;
+    background-position-y:center;
+    height: 300px;
+}
+
+.full-img a {
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px ;
+    width: fit-content;
+    margin: -49px 0% 0 74%;
+}
+
+.full-img a:hover,
+.footer .links a:hover,
+.ON_THE_BLOG .text a:hover,
+.CAKE-COLLECTION  .see-more:hover,
+nav ul li a:hover
+ {
+    text-decoration: underline;
+}
+
+/* .linkk  div  {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 30px ;
+    width: fit-content;
+    margin: -49px 0% 0 74%;
+} */
+/* end footer */
+
+
+
